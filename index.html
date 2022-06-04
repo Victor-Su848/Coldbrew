@@ -11,6 +11,8 @@
 <body>
     <!--Header content-->
     <header>
+        <!--Anchor for returning to top of screen-->
+        <a name="top"></a>
         <!--Navigation bar-->
         <nav>
             <div class="inner-header">
@@ -33,20 +35,42 @@
     <!--Main content-->
     <main>
         <!--Eyecatching text-->
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+        <h2>Trailer Video</h2>
         <video width="320" height="240" controls>
             <source src="#" type="video/mp4">
             <source src="#" type="video/ogg">
           Your browser does not support the video tag.
           </video>
+        <h2>Features</h2>
+        <h2>The team</h2>
+        <div class="meet-the-team">
+            <figure>
+                <img src="images/Logo.jpg" alt="Arvid Eapen's icon">
+                <figcaption>Arvid Eapen - Lead Composer</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Logo.jpg" alt="Shaunak Sawant's icon">
+                <figcaption>Shaunak Sawant - Story Director</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Logo.jpg" alt="Steven Su's icon">
+                <figcaption>Steven Su - Game Designer, Programmer</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Logo.jpg" alt="Victor Su's icon">
+                <figcaption>Victor Su - Web Manager</figcaption>
+            </figure>
+        </div>
     </main>
     <!--Footer content-->
     <footer>
-        <p>Contact Us <span>#@gmail.com</span></p>
-        <!--Return to top may be unnecessary-->
-        <button>Return to top</button>
-        <!--form for joining mailing list-->
+        <!--Left portion of mailing list-->
         <form>Join the mailing list</form>
+        <!--Right portion of mailing list-->
+        <div class="footer-right-side">
+            <p>Contact Us <span>#@gmail.com</span></p>
+            <a href="#top">Return to top</a>
+        </div>
     </footer>
 </body>
 </html>

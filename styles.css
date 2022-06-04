@@ -1,9 +1,16 @@
 /*VHS font styling*/
 @font-face {
     font-family: 'VCR OSD Mono';
-    src:  url('fonts/VCR_OSD_MONO_1.001.ttf');
-    
-  }
+    src:  url('fonts/VCR_OSD_MONO_1.001.ttf');    
+}
+/*Social icons styling*/
+.fa-brands{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
 
 /*Styles for everything*/
 * {
@@ -15,42 +22,51 @@
 /*       Header styles       */
 header {
     margin-bottom: 200px;
-    border-bottom: 1px solid grey;
+    border-bottom: 3px solid white;
 }
 /*Naviation styles*/
-nav {
-    
-}
 .inner-header {
     display: flex;
     justify-content:space-between;
 }
-.inner-header img {
+.inner-header img, figure img {
     width: 100px;
     height: auto;
 }
-
 .social-icons li{
     display: inline;
-}
-/*****************/  
-
+} 
 header h1 {
     text-align: center;
     font-size: 3em;
+    margin-top: 100px;
 }
 header p {
     text-align: center;    
     font-size: 2em;
+    margin-bottom: 100px;
 }
 
-
-/***********************/
-
-.fa-brands{
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
+/*Main content styling*/
+main h2 {
     text-align: center;
-    text-decoration: none;
+    width: fit-content;
+    margin: 10px auto;
+    border-bottom: 3px solid white;
+}
+main video {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Meet the team styling*/
+.meet-the-team {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Footer styling*/
+footer {
+    display: flex;
+    justify-content: space-around;
 }
