@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,23 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/bc4854229c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!--Header content-->
     <header>
+
+        <video autoplay muted loop class="background-video">
+            <source src="media/gameplay-vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
         <!--Anchor for returning to top of screen-->
         <a name="top"></a>
-        <!--Navigation bar-->
-        <nav>
-            <div class="inner-header">
+        <div class="header-content">
+            <!--Navigation bar-->
+            <nav>
                 <!--replace with actual logo-->
-                <a href="#"><img src="images/Logo.jpg" alt="Coldbrew Entertainment Logo"></a> 
-                    
+                <a href="#"><img class="logo" src="images/Logo.jpg" alt="Coldbrew Entertainment Logo"></a>
                 <!--List of social icons-->
                 <ul class="social-icons">
                     <li><a href="#" class="fa-brands fa-youtube"></a></li>
@@ -26,11 +33,11 @@
                     <li><a href="#" class="fa-brands fa-reddit"></a></li>
                     <li><a href="#" class="fa-brands fa-tiktok"></a></li>
                 </ul>
-            </div>
-        </nav>
-        <h1>Disfigured</h1>
-        <!--Link to steam page or epic games store-->
-        <p><a href="#" class="buy-now-link" >Buy Now (:</a></p>
+            </nav>
+            <h1 class="main-title">Disfigured</h1>
+            <!--Link to steam page or epic games store-->
+            <a href="#" class="buy-now-link">Buy Now (:</a>
+        </div>
     </header>
     <!--Main content-->
     <main>
@@ -39,8 +46,8 @@
         <video width="320" height="240" controls>
             <source src="#" type="video/mp4">
             <source src="#" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
+            Your browser does not support the video tag.
+        </video>
         <h2>Features</h2>
         <h2>The team</h2>
         <div class="meet-the-team">
@@ -73,4 +80,5 @@
         </div>
     </footer>
 </body>
+
 </html>

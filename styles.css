@@ -1,10 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main,
+footer {
+    background-color: black;
+}
+
 /*VHS font styling*/
 @font-face {
     font-family: 'VCR OSD Mono';
-    src:  url('fonts/VCR_OSD_MONO_1.001.ttf');    
+    src: url('fonts/VCR_OSD_MONO_1.001.ttf');
 }
+
 /*Social icons styling*/
-.fa-brands{
+.fa-brands {
     padding: 10px;
     font-size: 30px;
     width: 50px;
@@ -14,46 +26,80 @@
 
 /*Styles for everything*/
 * {
-    background-color: black;
     color: white;
     font-family: VCR OSD Mono, Arial, Helvetica, sans-serif;
 }
 
 /*       Header styles       */
 header {
-    margin-bottom: 200px;
-    border-bottom: 3px solid white;
-}
-/*Naviation styles*/
-.inner-header {
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    padding-bottom: 400px;
+    position: relative;
+    overflow: hidden;
 }
-.inner-header img, figure img {
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/*naviation styles*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.logo {
     width: 100px;
     height: auto;
+    border-radius: 40%;
 }
-.social-icons li{
+
+.social-icons li {
     display: inline;
-} 
-header h1 {
+}
+
+/*non-navigation header styles*/
+.main-title {
     text-align: center;
     font-size: 3em;
     margin-top: 100px;
 }
-header p {
-    text-align: center;    
+
+.buy-now-link {
+    text-align: center;
     font-size: 2em;
-    margin-bottom: 100px;
 }
 
 /*Main content styling*/
+main {
+    padding-top: 200px;
+}
 main h2 {
     text-align: center;
     width: fit-content;
     margin: 10px auto;
     border-bottom: 3px solid white;
 }
+
 main video {
     display: block;
     margin: 0 auto;
@@ -69,6 +115,7 @@ main video {
     margin: 0 auto;
     padding: 100px 0;
 }
+
 .meet-the-team figure {
     display: flex;
     flex-direction: column;
@@ -79,6 +126,7 @@ main video {
     padding: 20px;
     width: 200px;
 }
+
 .meet-the-team img {
     width: 200px;
     height: auto;
