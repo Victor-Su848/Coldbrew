@@ -62,7 +62,9 @@ main video {
 /*Meet the team styling*/
 .meet-the-team {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     width: 80%;
     margin: 0 auto;
     padding: 100px 0;
@@ -74,11 +76,12 @@ main video {
     align-items: center;
 
     margin: 0;
-    width: 20%;
+    padding: 20px;
+    width: 200px;
 }
 .meet-the-team img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: auto;
     border-radius: 50%;
     padding-bottom: 20px;
 }
