@@ -62,7 +62,25 @@ main video {
 /*Meet the team styling*/
 .meet-the-team {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.meet-the-team figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    width: 20%;
+}
+.meet-the-team img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-bottom: 20px;
 }
 
 /*Footer styling*/
