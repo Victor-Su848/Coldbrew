@@ -13,12 +13,10 @@
 <body>
     <!--Header content-->
     <header>
-
         <video autoplay muted loop class="background-video">
             <source src="media/gameplay-vid.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
         <!--Anchor for returning to top of screen-->
         <a name="top"></a>
         <div class="header-content">
@@ -42,13 +40,26 @@
     <!--Main content-->
     <main>
         <!--Eyecatching text-->
-        <h2>Trailer Video</h2>
-        <video width="320" height="240" controls>
+        <div class="top-to-bottom-radient">
+            <h2>Trailer Video</h2>
+        </div>
+        
+        <video width="64%" height="36%" controls>
             <source src="#" type="video/mp4">
             <source src="#" type="video/ogg">
             Your browser does not support the video tag.
         </video>
         <h2>Features</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-img"></div>
+                <p class="feature-text">This would be some text about the image to the left.</p>
+            </div>
+            <div class="feature">
+                <p class="feature-text">Here's more text for the image to the right.</p>
+                <div class="feature-img"></div>
+            </div>
+        </div>
         <h2>The team</h2>
         <div class="meet-the-team">
             <figure>
@@ -68,6 +79,7 @@
                 <figcaption>Victor Su - Web Manager</figcaption>
             </figure>
         </div>
+        <div class="bottom-to-top-radient"></div>
     </main>
     <!--Footer content-->
     <footer>

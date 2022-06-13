@@ -4,11 +4,6 @@ body {
     padding: 0;
 }
 
-main,
-footer {
-    background-color: black;
-}
-
 /*VHS font styling*/
 @font-face {
     font-family: 'VCR OSD Mono';
@@ -22,6 +17,10 @@ footer {
     width: 50px;
     text-align: center;
     text-decoration: none;
+}
+
+h2 {
+    padding: 40px 0;
 }
 
 /*Styles for everything*/
@@ -91,18 +90,51 @@ nav {
 
 /*Main content styling*/
 main {
+    background-color: #1b1b1b;
+}
+.top-to-bottom-radient {
+    background-image: linear-gradient(black, #1b1b1b);
     padding-top: 200px;
+}
+.bottom-to-top-radient {
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(#1b1b1b, black);
 }
 main h2 {
     text-align: center;
     width: fit-content;
-    margin: 10px auto;
-    border-bottom: 3px solid white;
+    margin: 0 auto;
 }
-
 main video {
     display: block;
     margin: 0 auto;
+}
+
+/*features styling*/
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+}
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+.feature-text, .feature-img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+.feature-img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 10%;
 }
 
 /*Meet the team styling*/
@@ -115,7 +147,6 @@ main video {
     margin: 0 auto;
     padding: 100px 0;
 }
-
 .meet-the-team figure {
     display: flex;
     flex-direction: column;
@@ -126,7 +157,6 @@ main video {
     padding: 20px;
     width: 200px;
 }
-
 .meet-the-team img {
     width: 200px;
     height: auto;
@@ -138,4 +168,6 @@ main video {
 footer {
     display: flex;
     justify-content: space-around;
+    background-color: black;
+    padding-bottom: 100px;
 }
