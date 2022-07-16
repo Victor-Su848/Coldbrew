@@ -26,7 +26,7 @@ h2 {
 /*Styles for everything*/
 * {
     color: white;
-    font-family: VCR OSD Mono, Arial, Helvetica, sans-serif;
+    font-family: VCR OSD Mono, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /*       Header styles       */
@@ -63,6 +63,7 @@ nav {
 
     margin: 0 auto;
     width: 80%;
+    height: 100px;
     padding-top: 20px;
 }
 
@@ -79,27 +80,28 @@ nav {
 /*non-navigation header styles*/
 .main-title {
     text-align: center;
-    font-size: 3em;
     margin-top: 100px;
 }
-
-.buy-now-link {
-    text-align: center;
+.main-title a {
+    text-decoration: none;
+}
+.steam-link {
     font-size: 2em;
+    text-align: center;
+    opacity: .75;
+    text-decoration: none;
+    
+    margin: 0 auto;
+    border: 3px solid white;
+    padding: 5px
 }
 
 /*Main content styling*/
+.trailer-video {
+    padding: 100px 0;
+}
 main {
-    background-color: #1b1b1b;
-}
-.top-to-bottom-radient {
-    background-image: linear-gradient(black, #1b1b1b);
-    padding-top: 200px;
-}
-.bottom-to-top-radient {
-    height: 200px;
-    width: 100%;
-    background-image: linear-gradient(#1b1b1b, black);
+    background-color: black;
 }
 main h2 {
     text-align: center;
@@ -111,31 +113,29 @@ main video {
     margin: 0 auto;
 }
 
-/*features styling*/
-.features {
+/*about styling*/
+.about {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
 }
-.feature {
+.gameplay-videos {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 100px;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 50px 0;
 }
-.feature-text, .feature-img {
-    width: 40%;
-    margin: 0 auto;
-    display: block;
+.gameplay-videos img {
+    width: 500px;
 }
-.feature-img {
-    width: 300px;
-    height: 300px;
-    border: 1px solid white;
-    border-radius: 10%;
+.about p {
+    text-align: center;
+    font-size: 1.5rem;
 }
+
 
 /*Meet the team styling*/
 .meet-the-team {
