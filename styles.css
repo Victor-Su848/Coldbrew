@@ -1,3 +1,13 @@
+:root.dark {
+    --color-base-text: white;
+    --color-base-bg: black;
+}
+:root.light {
+    --color-base-text: black;
+    --color-base-bg: #e8e8e8;
+}
+
+
 .pixel-corners {
     clip-path: polygon(
       0px 14px,
@@ -74,6 +84,7 @@ body {
     width: 50px;
     text-align: center;
     text-decoration: none;
+    color: white;
 }
 
 /*all hover styling*/
@@ -83,7 +94,7 @@ body {
 
 /*Styles for everything*/
 * {
-    color: white;
+    color: var(--color-base-text);
     font-family: VCR OSD Mono, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -154,18 +165,17 @@ nav {
     filter: brightness(100%);
     
     margin: 0 auto;
-    border: 8px solid black;
-    background-color: black;
-    color: white;
+    border: 8px solid var(--color-base-bg);
+    background-color: var(--color-base-bg);
     padding: 5px
 }
 
 /*Main content styling*/
+main, footer {
+    background-color: var(--color-base-bg);
+}
 .trailer-video {
     padding: 100px 0;
-}
-main {
-    background-color: black;
 }
 main h2 {
     text-align: center;
@@ -234,6 +244,14 @@ main p {
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: black;
     padding-bottom: 100px;
+}
+
+#toggle-theme {
+    position:fixed;
+    border:1px solid red;
+    color: red;
+    right: 5vh;
+    bottom: 5vh;
+    z-index: 1;
 }
