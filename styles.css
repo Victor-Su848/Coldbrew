@@ -1,13 +1,14 @@
+/*light and dark mode styles*/
 :root.dark {
     --color-base-text: white;
     --color-base-bg: black;
 }
 :root.light {
     --color-base-text: black;
-    --color-base-bg: #e8e8e8;
+    --color-base-bg: white;
 }
 
-
+/*styling to pixelate corners*/
 .pixel-corners {
     clip-path: polygon(
       0px 14px,
@@ -88,7 +89,7 @@ body {
 }
 
 /*all hover styling*/
-.main-title img:hover, .steam-link:hover, .fa-brands:hover, .logo:hover {
+.main-title img:hover, .steam-link:hover, .fa-brands:hover, .logo:hover, #toggle-theme:hover {
     filter: brightness(70%);
 }
 
@@ -248,10 +249,17 @@ footer {
 }
 
 #toggle-theme {
-    position:fixed;
-    border:1px solid red;
-    color: red;
+    position: fixed;
+    border:10px solid var(--color-base-text);
+    background-color: var(--color-base-text);
+    color: var(--color-base-bg);
+
+    width: 90px;
+    height: 80px;
+    font-size: 1rem;
+
     right: 5vh;
     bottom: 5vh;
     z-index: 1;
+    
 }
