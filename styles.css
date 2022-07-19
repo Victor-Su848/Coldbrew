@@ -6,6 +6,7 @@
 :root.light {
     --color-base-text: black;
     --color-base-bg: white;
+    --meet-the-team-img-inverse: 100%;
 }
 
 /*styling to pixelate corners*/
@@ -239,6 +240,7 @@ main p {
     height: auto;
     border-radius: 50%;
     padding-bottom: 20px;
+    filter: invert(var(--meet-the-team-img-inverse, 0%))
 }
 
 /*Footer styling*/
