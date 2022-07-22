@@ -249,6 +249,11 @@ footer {
     justify-content: space-around;
     padding-bottom: 100px;
 }
+/*styling to make forms look consistent with rest of page*/
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
 
 #toggle-theme {
     position: fixed;
@@ -263,5 +268,4 @@ footer {
     right: 5vh;
     bottom: 5vh;
     z-index: 1;
-    
 }
