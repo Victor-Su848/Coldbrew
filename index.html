@@ -87,13 +87,17 @@
     <footer>
         <!--Left portion of mailing list-->
         <form action="" method="post">
-            <label for="user-email">Join the mailing list</label>
-            <input style="background-color: var(--color-base-bg);" type="email" id="user-email" name="email" placeholder="binglebongle@gmail.com">
-            <button style="background: none" type="submit">Submit</button>
+            <div>
+                <label for="user-email">Join the mailing list:</label>
+                <input type="email" id="user-email" name="email" placeholder="binglebongle@gmail.com" required>
+                <span style=></span>
+            </div>
+            <button type="submit">Submit</button>
         </form>
         <!--Right portion of mailing list-->
-        <div class="footer-right-side">
-            <p>Contact Us <span>#@gmail.com</span></p>
+        <div class="contact-us" style="border-color: aqua;">
+            <p>Contact Us: <a href="mailto:support@coldbrewentertainment.com">support@coldbrewentertainment.com</a></p>
+            
         </div>
     </footer>
 
