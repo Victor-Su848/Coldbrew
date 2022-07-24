@@ -146,6 +146,11 @@ nav {
     height: auto;
     border-radius: 40%;
 }
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
 
 .social-icons li {
     display: inline;
@@ -263,8 +268,11 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-flow: row wrap;
     padding-bottom: 100px;
-
+}
+footer>form, footer>div {
+    margin-bottom: 50px;
 }
 
 /*footer form styling*/
@@ -273,6 +281,7 @@ form>div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    padding-right: 20px;
 }
 
 /*styling to make forms look consistent with rest of page*/
@@ -319,7 +328,7 @@ input:valid+span::before {
     padding: 0%;
     margin: 0%;
 }
-.contact-us > p, .contact-us > a {
+.contact-us > a {
     padding: 0%;
     margin: 0%;
 }
