@@ -352,3 +352,13 @@ input:valid+span::before {
     bottom: 5vh;
     z-index: 1;
 }
+
+/*removes the background video on small screens because small screens often cannot load video*/
+@media only screen and (max-width: 320px) {
+    .background-video {
+      display: none;
+    }
+    header {
+        background-color: black;
+    }
+  }
