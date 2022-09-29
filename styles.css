@@ -189,8 +189,13 @@ footer {
     background-color: var(--color-base-bg);
 }
 
+main iframe {
+    display:block;
+}
+
 .trailer-video {
     padding: 100px 0;
+    margin: 0 auto;
 }
 
 main h2 {
