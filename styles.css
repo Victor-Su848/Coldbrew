@@ -359,11 +359,15 @@ input:valid+span::before {
 }
 
 /*removes the background video on small screens because small screens often cannot load video*/
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
     .background-video {
       display: none;
     }
     header {
         background-color: black;
+    }
+    iframe {
+        width: 80%;
+        height: auto;
     }
   }
