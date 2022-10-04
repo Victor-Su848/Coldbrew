@@ -163,7 +163,8 @@ ul {
 }
 
 .main-title img {
-    width: min(500px, 100%);
+    width: 50%;
+    height: auto;
     filter: brightness(115%);
 }
 
@@ -176,8 +177,8 @@ ul {
     text-align: center;
     text-decoration: none;
     filter: brightness(100%);
-
     margin: 0 auto;
+    margin-top: 50px;
     border: 8px solid var(--color-base-bg);
     background-color: var(--color-base-bg);
     padding: 5px
